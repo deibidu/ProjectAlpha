@@ -1,34 +1,92 @@
-h1 {
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} 
-header {
-    background-color: pink;
+body {
+    margin: 0;
+}
+.font--montse {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.color__bg__pink {
+    background-color: #efd2d0;
+}
+
+.color__bg__black {
+    background-color: #1F1F1F;
+}
+
+.color__white {
+    color: white;
+}
+
+.color__red {
+    color: red;
+}
+
+.col__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 ul {
+    display: flex;
     list-style: none;
+    color: white;
 }
+
 ul a:visited {
     text-decoration: none;
 }
 
-.nav-list a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.btn-nav {
-    background-color: black;
-    border: none;
-}
-.btn-nav a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.btn-nav a:visited {
-    text-decoration: none;
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 40, 124, 32, 124;
 }
 
-.color-red {
-    color: red;
+.nav--list,  .nav--list a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    padding: 32px;
+} 
+
+.btn--nav, .btn--nav a, .btn--nav a:visited {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px, 24px;
+}
+
+.portfolio--sarah {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ux--designer {
+    padding: 124px;
+    text-align: left;
+    column-gap: 16px;
+    width: 457px;
+}
+.ux--designer h6 {
+    text-align: left;
+    font-weight: 300;
+    font-size: 20px;
+}
+.ux--designer h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.btn--ux {
+    font-family: 'Monsterrat', sans-serif;
+    width: 15%;
+    padding: 10px, 24px;
+    border: none;
 }
