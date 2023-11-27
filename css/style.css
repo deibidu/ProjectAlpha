@@ -1,0 +1,34 @@
+h1 {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+header {
+    background-color: pink;
+}
+ul {
+    list-style: none;
+}
+ul a:visited {
+    text-decoration: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn-nav {
+    background-color: black;
+    border: none;
+}
+.btn-nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn-nav a:visited {
+    text-decoration: none;
+}
+
+.color-red {
+    color: red;
+}
