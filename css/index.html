@@ -12,210 +12,215 @@
 
     <body>
         
-        <header class="color__bg__pink" id="Home">
-                <nav class="nav">
         
-            <h1 class="font--montse">S<span class="font--montse color__red">J Design</span></h1>
-                <ul>
-                    <li class="nav-list"><a href="#About">About</a></li>
-                    <li class="nav-list"><a href="#Services">Services</a></li>
-                    <li class="nav-list"><a href="#Portfolio">Portfolio</a></li>
-                    <li class="nav-list"><a href="#Blog">Blog</a></li>
+                
+        <nav class="topbar row-flex color-bg-pink">
+            <h1 class="h4 topbar__logo">S<span class="h4 color-red">J Design</span></h1>
+                <ul class="topbar__nav row-flex">
+                    <li class="topbar-nav__item"><a href="#About">About</a></li>
+                    <li class="topbar-nav__item"><a href="#Services">Services</a></li>
+                    <li class="topbar-nav__item"><a href="#Portfolio">Portfolio</a></li>
+                    <li class="topbar-nav__item"><a href="#Blog">Blog</a></li>
                 </ul>
-            <div class="nav">
-                    <button class="font--montse btn--nav"><a href="#">Let's Talk</a></button>
+            <div class="btn__nav">
+                    <button class="btn"><a class="color-white" href="#">Let's Talk</a></button>
             </div>
             </nav>
-        <section class="portfolio--sarah">
-            <div class="ux--designer col__flex">
-            <h6 class="font--montse">UX Designer</h6>
-                <h1 class="font--montse">Hi There, <span class="color__red">I'm Sarah Jones</span></h1>
-                <p class="font--montse">Welcome to my portfolio of captivating digital experiences. Explore my work and let's create something extraordinary together.</p>
-                <button class="btn--ux font--montse color__bg__black"><a href="#">Hire Me</a></button>
-                <button class="btn--ux font--montse"><a href="#">Portfolio</a></button>
-            </div>
+        <header class="color-bg-pink header row-flex"" id="Home">
+            <div class="header-main col-flex">
+                <h1 class="h5">UX Designer</h1>
+                    <h2 class="h2">Hi There, <span class="h2 color-red">I'm Sarah Jones</span></h2>
+                    <p class="">Welcome to my portfolio of captivating digital experiences. Explore my work and let's create something extraordinary together.</p>
+                    <div class="header__btn">
+                        <button class="btn"><a class="color-white" href="#">Hire Me</a></button>
+                        <button class="btn btn--white"><a href="#">Portfolio</a></button>
+                    </div>
+                </div>
             <div>
-                <img src="images/sarah.png" alt="Sarah Jones">
+                <img class="header__image" src="images/sarah.png" alt="Sarah Jones">
             </div>
-        </section>
             </header>
 
         <main>
-            <section class="font--montse about col__flex color__bg__black" id="About">
-                <h2 class="font--montse color__white">About me</h2>
-                <p class="font--montse color__white">I'm Sarah Jones, a UX/UI designer dedicated to crafting intuitive and visually stunning digital experiences. With a person for user-centric design,
-                I transform ideas into functional and beautiful interfaces. Let's collaborate and shape the future of design together.</p>
-             <dl>
-                <dt class="font--montse color__white">502</dt>
-                <dd class="font--montse color__white">Projects Done</dd>
-             </dl>
-             <dl>
-                <dt class="font--montse color__white">10+</dt>
-                <dd class="font--montse color__white">Years of Experience</dd>
-             </dl>
-             <dl>
-                <dt class="font--montse color__white">273+</dt>
-                <dd class="font--montse color__white">Clients Served</dd>
-             </dl>
+            <section class="about col-flex color-bg-black" id="About">
+                    <h2 class="h3 color-white">About me</h2>
+                    <p class="text-content color-white">I'm Sarah Jones, a UX/UI designer dedicated to crafting intuitive and visually stunning digital experiences. With a person for user-centric design,
+                    I transform ideas into functional and beautiful interfaces. Let's collaborate and shape the future of design together.</p>
+                <div class="about__dl row-flex">
+                    <dl class="about__dl__items">
+                        <dt class="h1 color-pink">502</dt>
+                        <dd class="h5 color-white">Projects Done</dd>
+                    </dl >
+                    <dl class="about__dl__items">
+                        <dt class="h1 color-pink">10+</dt>
+                        <dd class="h5 color-white">Years of Experience</dd>
+                    </dl>
+                    <dl class="about__dl__items">
+                        <dt class="h1 color-pink">273+</dt>
+                        <dd class="h5 color-white">Clients Served</dd>
+                    </dl>
             </section>
             
-            <section class="services col__flex" id="Services">
-                <h2 class="font--montse">Services</h2>
-                <p class="font--montse">Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital 
+            <section class="services col-flex" id="Services">
+                
+                    <h2 class="h3">Services</h2>
+                    <p class="text-content">Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital 
+                    experiences together.</p>
+               </div>
+                    <ul class="services__list row-flex">
+                        <li class="services__list__items">
+                            <img class="services__img" src="images/star_FILL0_wght100_GRAD0_opsz24.svg" alt="Design icon">
+                            <h3 class="">Design</h3>
+                            <p class="">I specialize in web development and design, creating visually appealing, user-friendly digital experiences.</p>
+                        </li>
+                        <li class="services__list__items">
+                            <img class="services__img"src="images/animation_FILL0_wght100_GRAD0_opsz24.svg" alt="Branding icon">
+                            <h3 class="">Branding</h3>
+                            <p class="">I'm a branding expert, crafting unique visual identities that tell your story and resonate with your audience.</p>
+                        </li>
+                        <li class="services__list__items">
+                            <img class="services__img"src="images/search_FILL0_wght100_GRAD0_opsz24.svg" alt="UX Research icon">
+                            <h3 class="">UX Researcher</h3>
+                            <p class="">I specialize in user experience research, collaborating on web development,and ensuring user-friendly digital products.</p>
+                        </li>
+                        <li class="services__list__items">
+                            <img class="services__img"src="images/checklist_rtl_FILL0_wght100_GRAD0_opsz40.svg" alt="Usability Testing icon">
+                            <h3 class="">Usability Testing</h3>
+                            <p class="">I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.</p>
+                        </li>
+                    </ul>
+            </section>
+
+            <section class="portfolio col-flex color-bg-mix" id="Portfolio">
+                <h2 class="h3">My portfolio</h2>
+                <p class="text-content">Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital
                 experiences together.</p>
-                <ul>
-                    <li>
-                        <img src="images/star_FILL0_wght100_GRAD0_opsz24.svg" alt="Design icon">
-                        <h3 class="font--montse">Design</h3>
-                        <p class="font--montse">I specialize in web development and design, creating visually appealing, user-friendly digital experiences.</p>
-                    </li>
-                    <li>
-                        <img src="images/animation_FILL0_wght100_GRAD0_opsz24.svg" alt="Branding icon">
-                        <h3 class="font--montse">Branding</h3>
-                        <p class="font--montse">I'm a branding expert, crafting unique visual identities that tell your story and resonate with your audience.</p>
-                    </li>
-                    <li>
-                        <img src="images/search_FILL0_wght100_GRAD0_opsz24.svg" alt="UX Research icon">
-                        <h3 class="font--montse">UX Researcher</h3>
-                        <p class="font--montse">I specialize in user experience research, collaborating on web development,and ensuring user-friendly digital products.</p>
-                    </li>
-                    <li>
-                        <img src="images/checklist_rtl_FILL0_wght100_GRAD0_opsz40.svg" alt="Usability Testing icon">
-                        <h3 class="font--montse">Usability Testing</h3>
-                        <p class="font--montse">I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.</p>
-                    </li>
+                <ul class="portfolio__list row-flex">
+                <li class="portfolio__list__item">
+                    <img class="portfolio__img" src="images/Educational Platform IMG.png" alt="educational platform web cover">
+                    <h3 class="h5">Educational Platform</h3>
+                    <p class="">Web Design / Usability Testing</p>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <img class="portfolio__img" src="images/Travel App Design IMG.png" alt="travel app design">
+                    <h3 class="h5">Travel App Design</h3>
+                    <p class="">UX Research / App Design</p>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <img class="portfolio__img" src="images/Personal Page IMG.png" alt="personal page web cover">
+                    <h3 class="h5">Personal Page</h3>
+                    <p class="">Web Design</p>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <img class="portfolio__img" src="images/Furniture Mobile App IMG.png" alt="furnite mobile app">
+                    <h3 class="h5">Furniture Mobile App</h3>
+                    <p class="">App Design</p>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <img class="portfolio__img" src="images/Coffee House Landing Page IMG.png" alt="coffee house landing page">
+                    <h3 class="h5">Coffee House Landing Page</h3>
+                    <p class="">UX Research / Web Design</p>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <img class="portfolio__img" src="images/Home Services Page IMG.png" alt="home services page design">
+                    <h3 class="h5">Home Services Page</h3>
+                    <p class="">Web Design / Marketing</p>
+                    <a href="#"></a>
+                </li>
                 </ul>
             </section>
 
-            <section class="portofolio col__flex color__bg__pink" id="Portfolio">
-                <h2 class="font--montse">My portfolio</h2>
-                <p class="font--montse">Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital
-                experiences together.</p>
-                <ul>
-                <li>
-                    <img src="images/Educational Platform IMG.png" alt="educational platform web cover">
-                    <h3 class="font--montse">Educational Platform</h3>
-                    <p class="font--montse">Web Design / Usability Testing</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <img src="images/Travel App Design IMG.png" alt="travel app design">
-                    <h3 class="font--montse">Travel App Design</h3>
-                    <p class="font--montse">UX Research / App Design</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <img src="images/Personal Page IMG.png" alt="personal page web cover">
-                    <h3 class="font--montse">Personal Page</h3>
-                    <p class="font--montse">Web Design</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <img src="images/Furniture Mobile App IMG.png" alt="furnite mobile app">
-                    <h3 class="font--montse">Furniture Mobile App</h3>
-                    <p class="font--montse">App Design</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <img src="images/Coffee House Landing Page IMG.png" alt="coffee house landing page">
-                    <h3 class="font--montse">Coffee House Landing Page</h3>
-                    <p class="font--montse">UX Research / Web Design</p>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <img src="images/Home Services Page IMG.png" alt="home services page design">
-                    <h3 class="font--montse">Home Services Page</h3>
-                    <p class="font--montse">Web Design / Marketing</p>
-                    <a href="#"></a>
-                </li>
-                </ul>
-            </section>
-
-            <section  class="skills col__flex" id="Skills">
-                <h2 class="font--montse">Core Design Skills</h2>
-                <p class="font--montse">I excel in essential design skills, creating visually stunning and functional digital experiences. From UI design to UX research,
+            <section  class="skills col-flex" id="Skills">
+                <h2 class="h3">Core Design Skills</h2>
+                <p class="text-content">I excel in essential design skills, creating visually stunning and functional digital experiences. From UI design to UX research,
                     my passion is to craft effective and memorable digital solutions.</p>
-                
-                <label form="interactiondesign" class="font--montse">Interaction Design</label>
-                <progress id="interactiondesign" max="100" value="60"> </progress> 60%
-                
-                <label form="usabilitytesting" class="font--montse">Usability Testing</label>
-                <progress id="usabilitytesting" max="100" value="70"> </progress> 70%
+                <div class="skills-label row-flex">
+                    <label form="interactiondesign" class="row-flex skills-label__item">Interaction Design</label>
+                    <progress id="interactiondesign" max="100" value="60"> </progress> 60%
+                    
+                    <label form="usabilitytesting" class="row-flex skills-label__item">Usability Testing</label>
+                    <progress id="usabilitytesting" max="100" value="70"> </progress> 70%
 
-                <label form="userresearch" class="font--montse">User Research</label>
-                <progress id="userresearch" max="100" value="45"> </progress> 45%
+                    <label form="userresearch" class="row-flex skills-label__item">User Research</label>
+                    <progress id="userresearch" max="100" value="45"> </progress> 45%
 
-                <label form="figma" class="font--montse">Figma</label>
-                <progress id="figma" max="100" value="95"> </progress> 95%
+                    <label form="figma" class="row-flex skills-label__item">Figma</label>
+                    <progress id="figma" max="100" value="95"> </progress> 95%
 
-                <label form="prototyping" class="font--montse">Prototyping</label>
-                <progress id="prototyping" max="100" value="80"> </progress> 80%
+                    <label form="prototyping" class="row-flex skills-label__item">Prototyping</label>
+                    <progress id="prototyping" max="100" value="80"> </progress> 80%
 
-                <label form="informationarchitecture" class="font--montse">Information Architecture</label>
-                <progress id="informationarchitecture" max="100" value="50"> </progress> 50%
+                    <label form="informationarchitecture" class="row-flex skills-label__item">Information Architecture</label>
+                    <progress id="informationarchitecture" max="100" value="50"> </progress> 50%
+            </div>
             </section>
 
-            <section class="col__flex" id="Contact">
-                <div >
-                <h3 class="font--montse">Get in Touch</h3>
-                <p class="font--montse">Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing together.</p>
+            <section class="contact row-flex color-bg-pink" id="Contact">
+                <div class="contact-main">
+                <h3 class="h3">Get in Touch</h3>
+                <p class="">Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing together.</p>
                 <ul>
                     <li>
                         <img src="images/phone_in_talk_FILL0_wght100_GRAD0_opsz24.svg" alt="phone icon">
-                        <p class="font--montse">+1205 5872 321</p>
+                        <p class="">+1205 5872 321</p>
                     </li>
                     <li>
                         <img src="images/mail_FILL0_wght100_GRAD0_opsz24.svg" alt="mail icon">
-                        <p class="font--montse">contact@sarahjonesdesign.com</p>
+                        <p class="">contact@sarahjonesdesign.com</p>
                     </li>
                     <li>
                         <img src="images/location_on_FILL0_wght100_GRAD0_opsz24.svg" alt="location icon">
-                        <p class="font--montse">1234 Design Street, Creativeville, Webland, Imaginary State, 98765</p>
+                        <p class="">1234 Design Street, Creativeville, Webland, Imaginary State, 98765</p>
                     </li>
                 </ul>
-                <ul>
-                    <li><button> <a href="#Twitter"> <img src="images/twitter.png" alt="twitter icon"> </a> </button></li>
-                    <li><button> <a href="#Instagram"> <img src="images/instagram_icon_125245.png" alt="instagram icon"> </a> </button></li>
-                    <li><button> <a href="#Dribbble"> <img src="images/dribbble.png" src="dribbble icon"> </a> </button></li>
-                    <li><button> <a href="#Facebook"> <img src="images/facebook.png" src="facebook icon"> </a> </button></li>
+                <ul class="row-flex">
+                    <li><button class="form__img"> <a href="#Twitter"> <img class="form__img" src="images/twitter.png" alt="twitter icon"> </a> </button></li>
+                    <li><button class="form__img"> <a href="#Instagram"> <img class="form__img" src="images/instagram_icon_125245.png" alt="instagram icon"> </a> </button></li>
+                    <li><button class="form__img"> <a href="#Dribbble"> <img class="form__img"  src="images/dribbble.png" src="dribbble icon"> </a> </button></li>
+                    <li><button class="form__img"> <a href="#Facebook"> <img class="form__img" src="images/facebook.png" src="facebook icon"> </a> </button></li>
                 </ul>
             </div>
             <div>
-                <form class="color__bg__pink" action="">
-                    <label for="name" class="font--montse">Fisrt Name</label>
+                <form class="col-flex" action="">
+                    <label for="name" class="">Fisrt Name</label>
                     <input type="text" id="name" name="user_name" placeholder="Jon Doe"/>
                         
-                    <label for="email" class="font--montse">Email</label>
+                    <label for="email" class="">Email</label>
                     <input type="email" id="email" name="user_email" placeholder="jane@doe.com"/>
 
-                    <label for="phoneNumber" class="font--montse">Phone number</label>
+                    <label for="phoneNumber" class="">Phone number</label>
                     <input type="tel" id="phoneNumber" name="user_phoneNumber" placeholder="666 666 666"/>
 
-                    <label for="message" class="font--montse">Your message</label>
+                    <label for="message" class="">Your message</label>
                     <textarea id="message" name="user_message" maxlength="300" cols="30" rows="10"></textarea>
                 
-                    <input class="color__white" type="submit" value="Send Message">
+                    <input class="btn color-white" type="submit" value="Send Message">
                 </form>
             </div>
             </section>
         </main>
         
-        <footer class="footer col__flex color__bg__black">
-            <ul>
-                <li class="font--montse color__white"><a  href="#About">About</a></li>
-                <li class="font--montse color__white"><a href="#Services">Services</a></li>
-                <li class="font--montse color__white"><h3 >S<span class="color__red">J Design</span></h3></li>
-                <li class="font--montse color__white"><a  href="#Portfolio">Portfolio</a></li>
-                <li class="font--montse color__white"><a href="#Blog">Blog</a></li>
+        <footer class="footer col-flex color-bg-black">
+            <ul class="row-flex">
+                <li ><a class="color-white" href="#About">About</a></li>
+                <li ><a class="color-white" href="#Services">Services</a></li>
+                <li class="color-white"><h3>S<span class="color-red">J Design</span></h3></li>
+                <li ><a class="color-white" href="#Portfolio">Portfolio</a></li>
+                <li ><a class="color-white" href="#Blog">Blog</a></li>
             </ul>
 
-            <p class="font--montse color__white">Follow me on social media:</p>
+            <p class=" color-white">Follow me on social media:</p>
 
-            <ul>
-                <li><button> <a href="#Instagram"> <img> </a> </button></li>
-                <li><button> <a href="#Twitter"> <img> </a> </button></li>
-                <li><button> <a href="#Dribbble"> <img> </a> </button></li>
-                <li><button> <a href="#Facebook"> <img> </a> </button></li>
+            <ul class="row-flex">
+                <li class="footer__icon"><button > <a href="#Instagram"> <img > </a> </button></li>
+                <li class="footer__icon"><button > <a href="#Twitter"> <img > </a> </button></li>
+                <li class="footer__icon"><button > <a href="#Dribbble"> <img > </a> </button></li>
+                <li class="footer__icon"><button > <a href="#Facebook"> <img > </a> </button></li>
             </ul>
         </footer>
     </body>

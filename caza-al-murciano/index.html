@@ -4,14 +4,20 @@
     <link rel="stylesheet" href="/caza-al-murciano/index.css" />
   </head>
   <body class="content">
-    <div class="scoring">
+    <div class="scoring fireworks">
       <h1>Puntuación total</h1>
       <h2 id="totalPoints">0</h2>
+      <h3 id="counter">00</h3>
       <p class="instructions">
         Cada vez que veas una versión de Josemi, dale con el ratón para sumar un punto. Los josemis soleados valen
         doble!
       </p>
-      <button class="cta cta--start">Empezar</button>
+      <div class="user-name-input" >
+      <input type="text" placeholder="tu nombre">
+    </div>
+      <button class="cta cta--start" disabled>Empezar</button>
+    </div>
+    <a class="cta cta--ranking" href="/caza-al-murciano/clasificacion.html">Ver Clasificación</a>
     </div>
     <div class="josemis">
       <button class="josemi">
@@ -30,9 +36,14 @@
         <img src="/caza-al-murciano/josemi-travieso.png" />
       </button>
     </div>
-    <div class="hammer hammer--pressed">
-      <img class="hammer" src="/caza-al-murciano/martillo.png" alt="hammer">
+    <div class="hammer">
+      <img src="/caza-al-murciano/martillo.png" />
     </div>
   </body>
-  <script src="/caza-al-murciano/index.js"></script>
+  <!-- jsDelivr  -->
+  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+
+  <!-- UNPKG -->
+  <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+  <script src="./index.js"></script>
 </html>

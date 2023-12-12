@@ -1,4 +1,12 @@
-function startGame() {
+  const container = document.querySelector('.fireworks');
+  const fireworks = new Fireworks.default(container);
+
+function JosemisHunter (){
+  
+}  
+
+  function startGame() {
+
   const availableClasses = [
     'josemi--t',
     'josemi--b',
@@ -38,6 +46,7 @@ function startGame() {
     });
 
     setTimeout(() => {
+      //este es el código que se va a ejecutar cuando se cumpla el tiempo del timeout
       josemiNode.classList.add('josemi--show');
     }, 400);
 
@@ -54,44 +63,72 @@ function startGame() {
   }
 
   pickJosemi();
+
   return setInterval(pickJosemi, 1000);
 }
 
-    const ctaButton = document.querySelector('.cta--start');
-    ctaButton.addEventListener('click', function () {
-      const gameIntervalId = (startGame);
-      ctaButton.style.display = 'none';
-    });
+localStorage
+
+const ctaButton = document.querySelector('.cta--start');
+ctaButton.addEventListener('click', function () {
+  totalPointsNode.innerText = 0;
+  const gameIntervalId = startGame();
+  ctaButton.style.display = 'none';
+
+  setTimeout(() => {
+    clearInterval(gameIntervalId);
+    ctaButton.style.display = 'inline-block'; 
+},   fireworks.start(), 10000);
+
+setTimeout(() => {
+    fireworks.stop(dispose) ;
+  })
+});
     
-    setTimeout(() => {
-      clearInterval (gameIntervalId)
-      ctaButton.style.display = 'inline-block';
-    }, 30000);
+    
 
-    const totalPointsNode = document.querySelector('#totalPoints');
-    console.log(totalPointsNode.innerText);
+ 
+const totalPointsNode = document.querySelector('#totalPoints');
 
-    document.querySelectorAll('.josemi').forEach((josemiNode) => {
-      josemiNode.addEventListener('click', () => {
-        const pointsToAdd = josemiNode.classList.contains('.josemi--sm') ? 2 : 1; // operador ternario
+document.querySelectorAll('.josemi').forEach((josemiNode) => {
+  josemiNode.addEventListener('click', () => {
+    const pointsToAdd = josemiNode.classList.contains('josemi--sm') ? 2 : 1; // Operadores ternarios
 
-          let totalPoints = Number(totalPointsNode.innerText) + pointsToAdd;
-          totalPointsNode.innerText = totalPoints ;
-      });
-    });
+    let totalPoints = Number(totalPointsNode.innerText) + pointsToAdd;
 
-    const hammerNode = document.querySelector('.hammer');
+    totalPointsNode.innerText = totalPoints;
+  });
+});
+const counter = document.querySelector('#counter') 
+  function startCounter () {
+    setInterval.startGame((counter), 10000)
+      if (startCounter > 0) {
+    startGame
+      } else (startCounter = 0) 
+    clearInterval();
+  
+  let chronometer = Number(counter.innerText) + startCounter;
+  counter.innerText = chronometer;
+};
+const hammerNode = document.querySelector('.hammer');
 
-   document.addEventListener('mousemove', (event) =>{ 
-   const clientX = event.clientX;
-   const clientY = event.clientY;
-   hammerNode.style.top = clientY;
-   hammerNode.style.left = clientX;
-   })
-   document.addEventListener('mousedown', () => {
-    hammerNode.classList.add('hammer--pressed');
-   });
-   document.addEventListener('mouseup', () => {
-    hammerNode.classList.remove ('hammer--pressed');
-   });
-   
+document.addEventListener('mousemove', (event) => {
+  const clientX = event.clientX;
+  const clientY = event.clientY;
+
+  hammerNode.style.top = clientY;
+  hammerNode.style.left = clientX;
+});
+
+document.addEventListener('mousedown', () => {
+  hammerNode.classList.add('hammer--pressed');
+});
+
+document.addEventListener('mouseup', () => {
+  hammerNode.classList.remove('hammer--pressed');
+});
+
+document.querySelector('.user-name-input').addEventListener('input', function (event) {
+  ctaButtonNode.disabled = !event.target. value.length;
+})
+

@@ -16,14 +16,22 @@ button {
   overflow: hidden;
 }
 
+
 #totalPoints {
   font-size: 4em;
 }
-
+#counter {
+  font-size: 2em;
+}
 .instructions {
   margin-bottom: 40px;
 }
-
+.user-name-input {
+  display: inline-block;
+  margin-top: 48px;
+  width: 600px;
+  padding: 12px 24px;
+}
 .cta {
   font-size: 1.2em;
   border-radius: 8px;
@@ -33,6 +41,13 @@ button {
 
 .cta--start {
   background: #2c3144;
+}
+.cta--start :disabled{
+  background: lightblue;
+
+}
+.cta--ranking {
+  background: coral;
 }
 
 .josemi {
@@ -114,19 +129,20 @@ button {
 .josemi--sm {
   max-width: 150px;
 }
+
 .hammer {
   position: fixed;
   width: 100px;
-  transform: rotate(-70deg);
-  margin-top: -40px;
-  margin-left: -50px;
+  transform: rotate(-20deg);
+  margin-top: -80px;
+  margin-left: -55px;
   pointer-events: none;
-
 }
+
 .hammer img {
   max-width: 100%;
-  rotate: 110deg;
 }
+
 .hammer--pressed img {
   transform: rotate(-45deg);
 }
